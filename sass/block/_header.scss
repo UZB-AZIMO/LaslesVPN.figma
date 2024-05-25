@@ -1,0 +1,113 @@
+  
+.navbar{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo{
+        font-size: 32px;
+        user-select: none;
+    }
+    
+    &__collection{
+        display: flex;
+        gap: 40px;
+        align-items: center;
+    }
+    &__item{
+        list-style: none;
+        font-size: 20px;
+        color: #4F5666;
+        transition: .6s;
+        &:hover{
+            font-size: 25px;
+            font-weight: bolder;
+            color:red;
+            cursor: pointer;
+        }
+    }
+    &__menu{
+        display: none;
+        &:hover{
+            color: red;
+        }
+    }
+    &__btn{
+        padding: 10px 20px;
+        border: none;
+        font-size: 20px;
+        font-weight: bolder;
+        background-color: white;
+        transition: .5s;
+        border-radius: 20px;
+        &:hover{
+color: red;
+width: 150px;
+font-weight: bolder;
+border: 3px solid red;
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+@media ( max-width:890px){
+    .navbar__btns{
+display: none;
+    }
+    
+}
+
+
+@media (
+    max-width:755px) {
+    .navbar{
+       
+        &__collection{
+            display: none;
+        }
+        
+        &__menu{
+            display: block;
+           &__:hover{
+            color: red;
+           } 
+        }
+      &__btns{
+        display: block;
+        font-size: 25px;
+        margin-left: 20%;
+      }
+    }
+}
+
+@media ( max-width:605px){
+    .navbar__btns{
+display: none;
+    }
+    
+}
+
+
+
+
+
+
+@media (max-width:345px) {
+    .navbar{
+        &__logo{
+            font-size: 24px;
+        }
+&__btn{
+    display: none;
+}
+    }
+}
+

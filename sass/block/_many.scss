@@ -1,0 +1,65 @@
+.many{
+    &__wrapper{
+        margin-top: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__card{
+        .card__title{
+            margin-top: 40px;
+            font-size: 35px;
+            width: 400px;
+            font-weight: bolder;
+        }
+.card__text{
+    width: 380px;
+    margin: 20px 0;
+}
+.card__item{
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    &::before{
+        content: "";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+    background: url("/assets/Group\ 1120.svg") center/cover no-repeat ;
+        
+    }
+}
+    }
+}
+
+
+
+
+
+
+
+@media ( max-width:401px){
+    .many{
+        &__wrapper{
+            gap: 20px;
+        }
+
+   
+        .card__title{
+            width: 310px;
+            font-size: 30px;
+            margin: 25px 0;
+            font-weight: bolder;
+        }
+    
+    .card__text{
+        width: 310px;
+        margin: 20px 0;
+    }
+    .card__item{
+        line-height: 20px;}
+
+
+}
+    
+}
