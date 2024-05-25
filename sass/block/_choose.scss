@@ -1,0 +1,132 @@
+.choose{
+    margin-top: 120px;
+    text-align: center;
+
+    &__title{
+        font-size: 35px;
+        font-weight: bold;
+    }
+    &__text{
+        width: 550px;
+        margin: auto;
+        margin-top: 20px;
+    }
+    &__wrapper{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 56px;
+        justify-content: center;
+
+    }
+    &__card{
+        padding: 80px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+text-align: left;
+transition: .6s;
+&:hover{
+    border: 3px solid red;
+}
+.card__title{
+    font-size: 20px;
+    margin: 30px 0;
+    font-weight: bolder;
+    text-align: center;
+}
+.card__text{
+    margin-top: 200px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.card__item{
+    display: flex;
+    line-height: 40px;
+    align-items: center;
+    &::before{
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 20px;
+    background: url("/assets/check.svg") center/cover no-repeat ;
+        
+    }
+  
+}
+.bir{
+    margin-top: 140px;
+}
+.ikki{
+    margin-top: 100px;
+}
+.uch{
+    margin-top: 60px;
+}
+
+
+        .card__btn{
+            width: 200px;
+            height: 50px;
+            align-items: center;
+            padding: 10px 20px;
+            border: 2px solid red;
+            color: red;
+            background-color: white;
+            font-size: 20px;
+            transition: .6s;
+            border-radius: 22px;
+            &:hover{
+                background-color: red;
+                color: white;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media ( max-width:430px){
+    .choose{
+        &__title{
+            width: 330px;
+        } 
+
+        &__text{
+            width: 330px;
+        }
+        &__card{
+            padding: 50px;
+        }
+
+
+
+
+
+        .bir{
+            margin-top: 100px;
+        }
+        .ikki{
+            margin-top: 60px;
+        }
+        .uch{
+            margin-top: 20px;
+        }
+}
+  
+}
