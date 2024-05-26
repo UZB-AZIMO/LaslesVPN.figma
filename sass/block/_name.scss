@@ -15,6 +15,9 @@
         display: flex;
         gap: 20px;
         justify-content: center;
+        &:hover{
+            border: 2px solid red;
+        }
        
         .card__title{
             font-size: 30px;
@@ -28,8 +31,9 @@
         .icon{
             height: 70px;
         }
+       
     }
-
+    
 }
 
 
