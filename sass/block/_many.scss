@@ -5,13 +5,25 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    &__img{
+                
+                transition: .9s;
+                cursor: pointer;
+                transform: rotate(-5deg);
+                &:hover{
+                    filter: none;
+                    transform: rotate(0deg);
+                }
+            }
     &__card{
         .card__title{
             margin-top: 40px;
             font-size: 35px;
             width: 400px;
             font-weight: bolder;
+            
         }
+        
 .card__text{
     width: 380px;
     margin: 20px 0;

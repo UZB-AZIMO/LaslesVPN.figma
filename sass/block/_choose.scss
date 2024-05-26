@@ -22,7 +22,7 @@
     &__card{
         padding: 80px;
         border: 2px solid #ddd;
-        border-radius: 5px;
+        border-radius: 10px;
 text-align: left;
 transition: .6s;
 &:hover{
@@ -96,24 +96,30 @@ transition: .6s;
 
 
 
+@media ( max-width:570px){
+    .choose{
+        &__text{
+            width: 380px;
+        }
+        &__title{
+            margin-top: -50px;
+        }
+    }
+}
+    
 
 
-
-
-
-
-
-
-
-@media ( max-width:430px){
+@media ( max-width:435px){
     .choose{
         justify-content: center;
         &__title{
+            margin-top: -40px;
+            font-size: 25px;
             width: 330px;
         } 
 
         &__text{
-            width: 330px;
+            width: 300px;
         }
         &__card{
             

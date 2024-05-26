@@ -11,6 +11,17 @@
         margin: 50px 0 40px 0;
         font-weight: bold;
     }
+    &__img{
+        filter: blur(2px);
+        transition: .9s;
+        &:hover{
+            filter:none;
+            cursor: pointer;
+           transform: translateY(30px) ;
+           
+           
+        }
+    }
     &__text{
     font-size: 18px;
         margin-bottom: 70px;
